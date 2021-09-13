@@ -1,1 +1,1 @@
-# XB-Software
+https://mironovnick.github.io/XB-Software/
