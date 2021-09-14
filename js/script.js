@@ -24,14 +24,8 @@ function Tagger(state) {
 			
 				let new_tag = {name: '', index: 0};
 				
-				if(this._tag_arr.length > 0){
-					
-					let last_elem = this._tag_arr.pop();
-					this._tag_arr.push(last_elem);
-					new_tag.index = last_elem.index;
-					new_tag.index++;
-					
-				}
+				if(this._tag_arr.length > 0)
+					new_tag.index = this._tag_arr[this._tag_arr.length - 1].index + 1;
 				
 				new_tag.name = tag_name;
 				this._tag_arr.push(new_tag);
